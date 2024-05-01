@@ -1,0 +1,136 @@
+/*
+Student Name: Connor Varney
+File Name: Styles.css
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
+
+body {
+    background-color: #c5a779; 
+    color: #8B4513; 
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.Marketplace {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.image-container {
+    width: 200px; 
+    height: 200px;
+}
+
+header {
+    background-color: #6B4226;
+    color: #F5F5DC; 
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-image: url('mountainbikemain.png');
+    font-family: "EB Garamond", serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: #8B4513; 
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #D2B48C; 
+    color: #6B4226;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    border-top: none;
+    display: inline-block;
+    font-size: 1.25em;
+    font-family: "EB Garamond", serif;
+    font-weight: bold;
+}
+
+nav li a {
+    padding: 0.5em;
+    display: block;
+    color: #f6eee4;
+    text-decoration: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+}
+
+aside {
+    grid-column: 1 / span 2;
+}
+footer {
+    background-color: #6B4226; 
+    color: #F5F5DC; 
+    padding: 20px;
+}
+
+/* Style rules for forms */
+fieldset, input, textarea  { 
+    margin-bottom: 2%;
+  }
+  
+  fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+  }
+  
+  label {
+    display: block;
+    padding-top: 2%;
+  }
+  
+  form #submit {
+    margin: 0 auto;
+    display: block;
+    padding: 1%;
+    background-color: #78593a;
+    color: #f6eee4;
+    font-size: 1.15em;
+    border-radius: 6px;
+  }
+
+  /* Style rules for table */
+  table {
+    border: 1px solid #2a1f14;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+/* Default styles for mobile nav */
+.mobile-nav {
+    display: none; 
+}
+
+/* Styles for desktop nab */
+.desktop-nav {
+    display: block; 
+}
+
+/* Media query for Mobile Nav */
+@media screen and (max-width: 768px) {
+    .mobile-nav {
+        display: block; 
+    }
+    .desktop-nav {
+        display: none; 
+    }
+}
